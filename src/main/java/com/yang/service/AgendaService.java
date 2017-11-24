@@ -15,7 +15,7 @@ public class AgendaService {
   2·判别用户该时间段是否有空
   3·创建者者在建立会议时，应将自己放入到会议中
  */
-    public void addUserToAgenda(String title,User... userName){
+    /*public void addUserToAgenda(String title,User... userName){
         Agenda agenda=AgendaDao.findByTitle(title);
         if(agenda==null) {
             System.out.println("该会议不存在，请确认会议名称后重新输入。");
@@ -27,6 +27,9 @@ public class AgendaService {
         }
         //判断是否有成员未加入，有得话输出未成功名单；否者输出成功
         System.out.println("成员加入会员成功！");
+    }*/
+    public void addUserToAgenda(String title){
+        System.out.println("会议添加成功");
     }
 
     public void removeUserFromAgenda(String title,User... userName){
